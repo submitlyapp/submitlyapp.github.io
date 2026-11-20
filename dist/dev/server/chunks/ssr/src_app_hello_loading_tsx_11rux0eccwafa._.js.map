@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Websites/submitly/src/app/hello/loading.tsx"],"sourcesContent":["export default function loading () {\r\n    return (<div>\r\n        loading\r\n    </div>)\r\n}"],"names":["loading"],"mappings":";;;;;;AAAe,SAASA;IACpB,qBAAQ,8OAAC;kBAAI;;;;;;AAGjB"}}]
+}

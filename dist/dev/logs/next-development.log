@@ -1,0 +1,26 @@
+{"timestamp":"00:00:00.897","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:03.568","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:00:35.613","source":"Server","level":"LOG","message":"✓ Compiled in 214ms"}
+{"timestamp":"00:01:23.253","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:01:33.353","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:01:40.451","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:01:44.893","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:02:00.438","source":"Server","level":"LOG","message":"✓ Compiled in 192ms"}
+{"timestamp":"00:02:00.763","source":"Server","level":"ERROR","message":"⨯ Error: The default export is not a React Component in \"/hello/loading\""}
+{"timestamp":"00:02:00.765","source":"Server","level":"ERROR","message":"⨯ Error: The default export is not a React Component in \"/hello/loading\""}
+{"timestamp":"00:02:02.035","source":"Server","level":"ERROR","message":"⨯ Error: The default export is not a React Component in \"/hello/loading\""}
+{"timestamp":"00:02:02.038","source":"Server","level":"ERROR","message":"⨯ Error: The default export is not a React Component in \"/hello/loading\""}
+{"timestamp":"00:02:02.266","source":"Browser","level":"ERROR","message":"Uncaught Error: The default export is not a React Component in \"/hello/loading\""}
+{"timestamp":"00:02:02.266","source":"Server","level":"ERROR","message":"[browser] \"\\u001b[31mUncaught Error: The default export is not a React Component in \\\"/hello/loading\\\"\\u001b[39m\""}
+{"timestamp":"00:02:07.592","source":"Server","level":"LOG","message":"✓ Compiled in 173ms"}
+{"timestamp":"00:02:21.590","source":"Server","level":"LOG","message":"✓ Compiled in 98ms"}
+{"timestamp":"00:02:21.777","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:02:27.608","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:02:28.115","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:02:28.511","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:02:28.912","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:02:29.335","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:02:29.633","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:02:29.806","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:02:36.141","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:02:40.976","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
