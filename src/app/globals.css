@@ -13,6 +13,10 @@
   @apply hover:-translate-y-0.5 transition-transform duration-75 ease-in;
 }
 
+.submitly {
+  @apply font-serif font-medium italic;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
