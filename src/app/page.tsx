@@ -12,10 +12,10 @@ export default function Home() {
       <main className="flex justify-center items-center h-screen w-screen z-10">
         <div className="@container h-1/3 w-full max-w-180 py-2.5 px-3 flex flex-col justify-center items-center">
           <h1 className="font-serif font-medium italic
-          text-[clamp(2rem,10cqh,10rem)]
+          text-[clamp(2rem,8cqh,10rem)]
           underline underline-offset-12 decoration-[5px]
           text-transparent bg-clip-text bg-linear-to-br from-black to-[#444] dark:from-white dark:to-[#ccc] px-3">Submitly</h1>
-          <p className="text-center font-serif italic text-[clamp(1.25rem,2.5cqh,2rem)] w-fit min-w-full text-black/70 dark:text-white/70">We handle the submissions. You handle the studying.</p>
+          <p className="text-center font-serif italic text-[clamp(1.25rem,2cqh,2rem)] w-fit min-w-full text-black/70 dark:text-white/70">We handle the submissions. You handle the studying.</p>
           <div className="flex p-5 gap-5 justify-center items-center w-full h-fit min-h-15"> <Download /> <Github /> </div>
         </div>
       </main>
