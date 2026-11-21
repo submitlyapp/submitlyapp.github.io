@@ -1,26 +1,85 @@
-{"timestamp":"00:00:00.897","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:03.568","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:00:35.613","source":"Server","level":"LOG","message":"✓ Compiled in 214ms"}
-{"timestamp":"00:01:23.253","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:01:33.353","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:01:40.451","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:01:44.893","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:02:00.438","source":"Server","level":"LOG","message":"✓ Compiled in 192ms"}
-{"timestamp":"00:02:00.763","source":"Server","level":"ERROR","message":"⨯ Error: The default export is not a React Component in \"/hello/loading\""}
-{"timestamp":"00:02:00.765","source":"Server","level":"ERROR","message":"⨯ Error: The default export is not a React Component in \"/hello/loading\""}
-{"timestamp":"00:02:02.035","source":"Server","level":"ERROR","message":"⨯ Error: The default export is not a React Component in \"/hello/loading\""}
-{"timestamp":"00:02:02.038","source":"Server","level":"ERROR","message":"⨯ Error: The default export is not a React Component in \"/hello/loading\""}
-{"timestamp":"00:02:02.266","source":"Browser","level":"ERROR","message":"Uncaught Error: The default export is not a React Component in \"/hello/loading\""}
-{"timestamp":"00:02:02.266","source":"Server","level":"ERROR","message":"[browser] \"\\u001b[31mUncaught Error: The default export is not a React Component in \\\"/hello/loading\\\"\\u001b[39m\""}
-{"timestamp":"00:02:07.592","source":"Server","level":"LOG","message":"✓ Compiled in 173ms"}
-{"timestamp":"00:02:21.590","source":"Server","level":"LOG","message":"✓ Compiled in 98ms"}
-{"timestamp":"00:02:21.777","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:02:27.608","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:02:28.115","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:02:28.511","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:02:28.912","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:02:29.335","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:02:29.633","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:02:29.806","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:02:36.141","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:02:40.976","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:00:00.807","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:02.904","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:00:03.520","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:00:03.526","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:00:09.943","source":"Server","level":"LOG","message":"✓ Compiled in 266ms"}
+{"timestamp":"00:00:24.907","source":"Server","level":"LOG","message":"✓ Compiled in 139ms"}
+{"timestamp":"00:00:50.794","source":"Server","level":"LOG","message":"✓ Compiled in 136ms"}
+{"timestamp":"00:01:13.448","source":"Server","level":"LOG","message":"✓ Compiled in 102ms"}
+{"timestamp":"00:01:19.502","source":"Server","level":"LOG","message":"✓ Compiled in 113ms"}
+{"timestamp":"00:01:25.043","source":"Server","level":"LOG","message":"✓ Compiled in 122ms"}
+{"timestamp":"00:01:50.591","source":"Server","level":"LOG","message":"✓ Compiled in 117ms"}
+{"timestamp":"00:02:01.139","source":"Server","level":"LOG","message":"✓ Compiled in 122ms"}
+{"timestamp":"00:02:24.412","source":"Server","level":"LOG","message":"✓ Compiled in 130ms"}
+{"timestamp":"00:02:36.251","source":"Server","level":"LOG","message":"✓ Compiled in 114ms"}
+{"timestamp":"00:02:49.183","source":"Server","level":"LOG","message":"✓ Compiled in 292ms"}
+{"timestamp":"00:02:53.468","source":"Server","level":"LOG","message":"✓ Compiled in 78ms"}
+{"timestamp":"00:03:15.885","source":"Server","level":"LOG","message":"✓ Compiled in 111ms"}
+{"timestamp":"00:03:42.348","source":"Server","level":"LOG","message":"✓ Compiled in 132ms"}
+{"timestamp":"00:03:51.666","source":"Server","level":"LOG","message":"✓ Compiled in 105ms"}
+{"timestamp":"00:04:05.243","source":"Server","level":"LOG","message":"✓ Compiled in 116ms"}
+{"timestamp":"00:04:29.784","source":"Server","level":"LOG","message":"✓ Compiled in 129ms"}
+{"timestamp":"00:04:38.113","source":"Server","level":"LOG","message":"✓ Compiled in 109ms"}
+{"timestamp":"00:04:44.915","source":"Server","level":"LOG","message":"✓ Compiled in 122ms"}
+{"timestamp":"00:05:29.174","source":"Server","level":"LOG","message":"✓ Compiled in 117ms"}
+{"timestamp":"00:05:34.180","source":"Server","level":"LOG","message":"✓ Compiled in 100ms"}
+{"timestamp":"00:05:43.733","source":"Server","level":"LOG","message":"✓ Compiled in 106ms"}
+{"timestamp":"00:06:32.626","source":"Server","level":"LOG","message":"✓ Compiled in 99ms"}
+{"timestamp":"00:06:32.931","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:06:40.663","source":"Server","level":"LOG","message":"✓ Compiled in 116ms"}
+{"timestamp":"00:06:40.698","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:06:46.598","source":"Server","level":"LOG","message":"✓ Compiled in 79ms"}
+{"timestamp":"00:06:46.622","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:06:49.895","source":"Server","level":"LOG","message":"✓ Compiled in 111ms"}
+{"timestamp":"00:06:49.927","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:07:07.656","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:07:07.689","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:07:07.863","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:07:07.870","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:07:27.621","source":"Server","level":"LOG","message":"✓ Compiled in 125ms"}
+{"timestamp":"00:07:27.642","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:07:27.644","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:07:38.363","source":"Server","level":"LOG","message":"✓ Compiled in 128ms"}
+{"timestamp":"00:07:38.382","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:07:38.384","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:07:59.030","source":"Server","level":"LOG","message":"✓ Compiled in 87ms"}
+{"timestamp":"00:07:59.065","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:07:59.352","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:08:42.525","source":"Server","level":"LOG","message":"✓ Compiled in 103ms"}
+{"timestamp":"00:08:42.544","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:08:42.545","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:08:56.017","source":"Server","level":"LOG","message":"✓ Compiled in 121ms"}
+{"timestamp":"00:08:56.040","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:08:56.303","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:09:04.843","source":"Server","level":"LOG","message":"✓ Compiled in 83ms"}
+{"timestamp":"00:09:04.856","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:09:04.857","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:09:11.614","source":"Server","level":"LOG","message":"✓ Compiled in 131ms"}
+{"timestamp":"00:09:11.637","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:09:11.639","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:09:18.064","source":"Server","level":"LOG","message":"✓ Compiled in 91ms"}
+{"timestamp":"00:09:18.084","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:09:18.386","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:09:21.740","source":"Server","level":"LOG","message":"✓ Compiled in 106ms"}
+{"timestamp":"00:09:21.763","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:09:21.765","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:10:07.480","source":"Server","level":"LOG","message":"✓ Compiled in 100ms"}
+{"timestamp":"00:10:07.491","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:10:07.502","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:10:52.804","source":"Server","level":"LOG","message":"✓ Compiled in 141ms"}
+{"timestamp":"00:10:52.830","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:10:53.090","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:10:56.874","source":"Server","level":"LOG","message":"✓ Compiled in 116ms"}
+{"timestamp":"00:10:56.892","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:10:56.894","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:11:10.266","source":"Server","level":"LOG","message":"✓ Compiled in 120ms"}
+{"timestamp":"00:11:10.284","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:11:10.285","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:11:21.165","source":"Server","level":"LOG","message":"✓ Compiled in 88ms"}
+{"timestamp":"00:11:21.183","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:11:21.186","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:11:41.732","source":"Server","level":"LOG","message":"✓ Compiled in 81ms"}
+{"timestamp":"00:11:41.748","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:11:42.042","source":"Server","level":"WARN","message":"⚠ ./\nWarning: Failed to find font override values for font `Libertinus Serif`\nSkipping generating a fallback font.\n\n"}
+{"timestamp":"00:12:49.706","source":"Server","level":"LOG","message":"✓ Compiled in 110ms"}
+{"timestamp":"00:13:02.969","source":"Server","level":"LOG","message":"✓ Compiled in 96ms"}

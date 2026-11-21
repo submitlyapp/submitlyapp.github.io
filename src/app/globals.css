@@ -5,11 +5,20 @@
   --foreground: #171717;
 }
 
+@utility glow {
+  @apply relative before:content-[''] before:inset-0 before:absolute before:w-full before:h-full before:bg-white/50 before:-z-1 before:rounded-2xl before:blur-lg;
+}
+
+@utility hover-anim {
+  @apply hover:-translate-y-0.5 transition-transform duration-75 ease-in;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-instrument-serif);
 }
 
 @media (prefers-color-scheme: dark) {
