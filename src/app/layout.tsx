@@ -23,6 +23,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Submitly",
   description: "Submitly - Homework submission macro. Less time submitting, more time grinding.",
+  icons: {
+    icon: "/icon.svg",
+    apple: "/apple-icon.svg"
+  }
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
