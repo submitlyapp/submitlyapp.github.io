@@ -64,7 +64,7 @@ export default function PopUp() {
                                 rounded-3xl border-2 justify-between border-black dark:border-white p-5 gap-2">
                                     <h1 className="flex w-full py-5 px-8 text-2xl justify-between font-bold font-mono">Instapay <button onClick={() => setInstaOpen(false)} className="cursor-pointer">X</button></h1>
                                     <div className="h-3/4 aspect-43/46 relative"><Image src="/instapay.jpeg" alt="instapay qr code" fill className="rounded-2xl" /></div>
-                                    <a href="https://ipn.eg/S/ahmd.mandouh/instapay/6Le7kY" target="_blank" className="font-mono text-xs sm:text-lg underline">https://ipn.eg/S/ahmd.mandouh/instapay/6Le7kY</a>
+                                    <a href="https://ipn.eg/S/submitly/instapay/2D1xSR" target="_blank" className="font-mono text-xs sm:text-lg underline">https://ipn.eg/S/submitly/instapay/2D1xSR</a>
                                 </motion.div>
                             )}
                         </AnimatePresence>
