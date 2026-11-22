@@ -5,7 +5,6 @@ import StaggerContainer, { StaggerItem } from "@/components/StaggerChildren";
 import BuyMeACoffee from "@/components/BuyMeACoffee";
 import { MenuProvider } from "@/components/MenuContext";
 import PopUp from "@/components/PopUp";
-import { AnimatePresence } from "motion/react";
 
 export default function Home() {
   return (
@@ -82,9 +81,7 @@ export default function Home() {
           </div>
         </section>
 
-        <AnimatePresence>
-          <PopUp />
-        </AnimatePresence>
+        <PopUp />
       </MenuProvider>
     </div>
   );
