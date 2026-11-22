@@ -5,6 +5,7 @@ import StaggerContainer, { StaggerItem } from "@/components/StaggerChildren";
 import BuyMeACoffee from "@/components/BuyMeACoffee";
 import { MenuProvider } from "@/components/MenuContext";
 import PopUp from "@/components/PopUp";
+import FAQ from "@/components/FAQ";
 
 export default function Home() {
   return (
@@ -83,6 +84,14 @@ export default function Home() {
 
         <PopUp />
       </MenuProvider>
+
+      <section id="faq" className="relative flex justify-center items-center w-screen min-h-[60vh] bg-zinc-300 dark:bg-mist-950 border-b-2 border-black/20 dark:border-white/20
+        p-10 z-1 overflow-clip">
+          <div className="min-h-100 min-w-100 h-1/3 w-1/3 p-5 text-xl flex flex-col gap-5">
+            <h1 className="font-mono font-bold border-b-2 border-black/50 dark:border-white/50 pb-5">Frequently Asked Questions</h1>
+            <FAQ />
+          </div>
+      </section>
     </div>
   );
 }

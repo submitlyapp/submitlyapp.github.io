@@ -17,11 +17,13 @@ const itemVariants: Variants = {
     opacity: 0,
     y: 5,
     scale: 0.95,
+    filter: "blur(10px)"
   },
   visible: {
     opacity: 1,
     y: 0,
     scale: 1,
+    filter: "blur(0px)",
     transition: {
       duration: 0.5,
       ease: "easeOut",
