@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   cacheComponents: false,
   partialPrefetching: false,
+  images: { unoptimized: true },
   turbopack: {
     rules: {
       "*.css": {

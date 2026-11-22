@@ -41,7 +41,7 @@ export default function Home() {
       </main>
 
       <MenuProvider>
-        <section id="download" className="relative flex justify-center items-center w-screen h-screen lg:h-[80vh] bg-zinc-200 dark:bg-zinc-950 border-y-2 border-black/20 dark:border-white/20
+        <section id="download" className="relative flex justify-center items-center w-screen min-h-screen lg:h-[80vh] bg-zinc-200 dark:bg-zinc-950 border-y-2 border-black/20 dark:border-white/20
         p-10 z-1 overflow-clip">
           {/* <div>
             <div className="absolute inset-0 rounded-full -translate-1/2 bg-gray-600 blur-[100px] opacity-20 h-300 aspect-square" />
