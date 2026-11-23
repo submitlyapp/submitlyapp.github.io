@@ -43,7 +43,7 @@ export default function Home() {
       </main>
 
       <section id="about" className="flex flex-col sm:flex-row justify-evenly pt-10 relative w-screen min-h-[80vh] items-center border-t-2 dark:border-white/20 border-black/20">
-        <div className="absolute inset-0 h-screen w-full z-0
+        <div className="absolute inset-0 h-full w-full z-0
         bg-[linear-gradient(to_right,#ccc_3px,transparent_1px),linear-gradient(to_bottom,#ccc_3px,transparent_1px)]
         dark:bg-[linear-gradient(to_right,#222_3px,transparent_1px),linear-gradient(to_bottom,#222_3px,transparent_1px)] bg-size-[50px_50px] sm:bg-size-[100px_100px]
         mask-[radial-gradient(80%_95%_at_50%_80%,black_40%,transparent_70%)]" aria-hidden />
