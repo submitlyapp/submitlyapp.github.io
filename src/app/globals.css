@@ -13,6 +13,11 @@
   @apply hover:-translate-y-0.5 transition-transform duration-75 ease-in;
 }
 
+.grid {
+  @apply bg-[linear-gradient(to_right,#ccc_3px,transparent_1px),linear-gradient(to_bottom,#ccc_3px,transparent_1px)]
+      dark:bg-[linear-gradient(to_right,#222_3px,transparent_1px),linear-gradient(to_bottom,#222_3px,transparent_1px)] bg-size-[25px_25px];
+}
+
 .submitly {
   @apply font-serif font-medium italic;
 }

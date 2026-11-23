@@ -22,7 +22,7 @@ const faq = [
         answer: (<p> <b>No!</b> <span className="submitly">Submitly</span> is, and plans to stay, completely free! There isn't any subscriptions, or hidden fees. We're committed to making high-quality, free tools that every student can use, and benefit from! </p>),
     },
     {
-        question: (<p className="text-left"> Is my homework safe and private while using <span className="submitly">Submitly</span>?</p>),
+        question: (<p> Is my homework safe and private while using <span className="submitly">Submitly</span>?</p>),
         answer: (<p> Your privacy matters to us! Uploaded images and text are sent to third-party LLMs (such as Google Gemini) for processing. While we take privacy <i>very seriously</i> and strive to protect your data, no online service can guarantee <i>absolute</i> security. We recommend avoiding uploading images that contain <i>sensitive personal information</i>. We're committed to making <span className="submitly">Submitly</span> as safe and transparent as possible! </p>),
     },
 ]
@@ -33,7 +33,7 @@ const FAQItem = ({faq}: { faq: { question: JSX.Element, answer: JSX.Element } })
     return (
         <div className="flex flex-col w-full px-3 border-b-2 border-black/50 dark:border-white/50 gap-5 text-left">
             <button
-            className="w-full flex justify-between font-bold cursor-pointer"
+            className="w-full flex justify-between font-bold cursor-pointer text-left"
             onClick={() => setIsOpen(!isOpen)}>
                 {faq.question}
                 <Image src={"/chevron.svg"} alt="" width={24} height={24} className={` dark:invert ${isOpen ? 'transform rotate-180' : ''} transition-all duration-150 ease-in `} />

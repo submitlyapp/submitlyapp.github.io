@@ -6,17 +6,18 @@ import BuyMeACoffee from "@/components/BuyMeACoffee";
 import { MenuProvider } from "@/components/MenuContext";
 import PopUp from "@/components/PopUp";
 import FAQ from "@/components/FAQ";
+import Card from "@/components/Card";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-linear-to-b dark:from-black dark:from-20% dark:to-[#555]">
+    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <div className="absolute inset-0 h-screen w-full z-0
       bg-[linear-gradient(to_right,#ccc_3px,transparent_1px),linear-gradient(to_bottom,#ccc_3px,transparent_1px)]
       dark:bg-[linear-gradient(to_right,#222_3px,transparent_1px),linear-gradient(to_bottom,#222_3px,transparent_1px)] bg-size-[50px_50px] sm:bg-size-[100px_100px]
       mask-[radial-gradient(80%_95%_at_50%_80%,black_40%,transparent_70%)]" aria-hidden />
 
-      <main className="flex justify-center items-center h-[80vh] w-screen z-5">
-        <div className="@container h-1/3 w-full max-w-180 py-2.5 px-3 flex flex-col justify-center items-center gap-2.5">
+      <main className="flex justify-center items-center h-[80vh] w-screen dark:bg-linear-to-b dark:from-black dark:from-20% dark:to-[#111]">
+        <div className="@container h-1/3 w-full max-w-180 py-2.5 px-3 flex flex-col justify-center items-center gap-2.5 z-10">
 
           <StaggerContainer>
             <StaggerItem>
@@ -40,6 +41,34 @@ export default function Home() {
           </StaggerContainer>
         </div>
       </main>
+
+      <section id="about" className="relative w-screen min-h-[80vh] flex items-center border-t-2 dark:border-white/20 border-black/20">
+        <div className="absolute inset-0 h-screen w-full z-0
+        bg-[linear-gradient(to_right,#ccc_3px,transparent_1px),linear-gradient(to_bottom,#ccc_3px,transparent_1px)]
+        dark:bg-[linear-gradient(to_right,#222_3px,transparent_1px),linear-gradient(to_bottom,#222_3px,transparent_1px)] bg-size-[50px_50px] sm:bg-size-[100px_100px]
+        mask-[radial-gradient(80%_95%_at_50%_80%,black_40%,transparent_70%)]" aria-hidden />
+
+        <div className="@container z-10 h-100 w-1/2 flex flex-col px-10 gap-5">
+          <h1 className="font-bold text-[clamp(1.5rem,10cqw,2rem)] border-b-2 pb-2.5">About <span className="submitly">Submitly</span></h1>
+          <p></p>
+        </div>
+
+        <div className="scale-75 sm:scale-100 absolute right-0 sm:right-50 flex flex-col items-center min-h-100 min-w-100 w-100 p-10 gap-10 transform rotate-5">
+          <h1 className="text-2xl font-mono font-semibold w-full text-left">The <b>Process</b></h1>
+          <div className="w-full flex flex-col items-center gap-1.5">
+            <Card title={(<>Upload your <b>homework</b></>)} body={(<>Upload your completed homework to <span className="submitly">Submitly</span>, by either uploading a file, or entering your answer.</>)} />
+
+            <div className="w-0.5 h-10 bg-linear-to-b from-transparent from-5% via-black/50 dark:via-white/50 to-95% to-transparent" />
+
+            <Card title={(<>Select your <b>portal</b></>)} body={(<>Select the educational portal you want <span className="submitly">Submitly</span> to submit to. Make sure you're logged in!</>)} />
+
+            <div className="w-0.5 h-10 bg-linear-to-b from-transparent from-5% via-black/50 dark:via-white/50 to-95% to-transparent" />
+            
+            <Card title={(<>Watch the <b>magic</b></>)} body={(<><span className="submitly">Submitly</span> will take it from there. Just sit back, relax, and watch the magic happen.</>)} />
+
+          </div>
+        </div>
+      </section>
 
       <MenuProvider>
         <section id="download" className="relative flex justify-center items-center w-screen min-h-screen lg:h-[80vh] bg-zinc-200 dark:bg-zinc-950 border-y-2 border-black/20 dark:border-white/20
