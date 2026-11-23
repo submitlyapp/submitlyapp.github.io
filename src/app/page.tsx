@@ -42,18 +42,21 @@ export default function Home() {
         </div>
       </main>
 
-      <section id="about" className="relative w-screen min-h-[80vh] flex items-center border-t-2 dark:border-white/20 border-black/20">
+      <section id="about" className="flex flex-col sm:flex-row justify-evenly pt-10 relative w-screen min-h-[80vh] items-center border-t-2 dark:border-white/20 border-black/20">
         <div className="absolute inset-0 h-screen w-full z-0
         bg-[linear-gradient(to_right,#ccc_3px,transparent_1px),linear-gradient(to_bottom,#ccc_3px,transparent_1px)]
         dark:bg-[linear-gradient(to_right,#222_3px,transparent_1px),linear-gradient(to_bottom,#222_3px,transparent_1px)] bg-size-[50px_50px] sm:bg-size-[100px_100px]
         mask-[radial-gradient(80%_95%_at_50%_80%,black_40%,transparent_70%)]" aria-hidden />
 
-        <div className="@container z-10 h-100 w-1/2 flex flex-col px-10 gap-5">
+        <div className="@container z-10 max-w-150 min-w-80 w-1/2 flex flex-col px-10 gap-5">
           <h1 className="font-bold text-[clamp(1.5rem,10cqw,2rem)] border-b-2 pb-2.5">About <span className="submitly">Submitly</span></h1>
-          <p></p>
+          <p className="flex flex-col gap-2.5 text-sm sm:text-[1rem]">
+            <p><span className="submitly">Submitly</span> takes the hassle out of turning in homework. Instead of <i>clicking through clunky educational portals</i> and uploading assignments one by one, <span className="submitly">Submitly</span> automates the repetitive submission process so you can get back to studying.</p>
+            <p>Simply upload your completed files or enter your answers, choose your logged-in educational portal, and let <span className="submitly">Submitly</span> handle the rest. It <i>doesn't do</i> the homework for you; it just streamlines the final step of turning it in. Completely <i>free</i> and easy to use.</p>
+          </p>
         </div>
 
-        <div className="scale-75 sm:scale-100 absolute right-0 sm:right-50 flex flex-col items-center min-h-100 min-w-100 w-100 p-10 gap-10 transform rotate-5">
+        <div className="flex flex-col scale-85 sm:scale-100 items-center min-h-100 min-w-100 w-100 p-10 gap-10 transform rotate-5">
           <h1 className="text-2xl font-mono font-semibold w-full text-left">The <b>Process</b></h1>
           <div className="w-full flex flex-col items-center gap-1.5">
             <Card title={(<>Upload your <b>homework</b></>)} body={(<>Upload your completed homework to <span className="submitly">Submitly</span>, by either uploading a file, or entering your answer.</>)} />
