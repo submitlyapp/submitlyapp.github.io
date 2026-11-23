@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Libertinus_Serif } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import StructuredData from "./structured-data";
+import StructuredData from "../structured-data";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -65,10 +65,17 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export async function generateStaticParams() {
+  return [{ lang: 'en' }, { lang: 'ar' }]
+}
+
+export default async function RootLayout({ children, params }: LayoutProps<"/[lang]">) {
+  const lang = (await params).lang
+  
   return (
     <html
-      lang="en"
+      lang={lang}
+      dir={lang === "ar" ? "rtl" : "ltr"}
       className={`${geistSans.variable} ${instrumentSerif.variable} ${geistMono.variable} h-full antialiased`}
     >
       <title>Submitly</title>

@@ -1,14 +1,18 @@
 import Download from "@/components/Download";
 import Image from "next/image";
-import Github from "@/components/Github";
+import LearnMore from "@/components/LearnMore";
 import StaggerContainer, { StaggerItem } from "@/components/StaggerChildren";
 import BuyMeACoffee from "@/components/BuyMeACoffee";
 import { MenuProvider } from "@/components/MenuContext";
 import PopUp from "@/components/PopUp";
 import FAQ from "@/components/FAQ";
 import Card from "@/components/Card";
+import { getDictionary } from "./dictionaries";
 
-export default function Home() {
+export default async function Home({ params }: PageProps<"/[lang]">) {
+  const dict = await getDictionary();
+
+  console.log(dict)
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <div className="absolute inset-0 h-screen w-full z-0
@@ -26,17 +30,17 @@ export default function Home() {
                 text-[clamp(2rem,8cqh,10rem)] text-center
                 underline underline-offset-12 decoration-[5px]
                 text-transparent bg-clip-text bg-linear-to-br from-black to-[#444] dark:from-white dark:to-[#ccc] px-3">Submitly</h1>
-                <p className="text-center font-serif italic text-[clamp(1.25rem,2cqh,2rem)] w-fit min-w-full text-black/70 dark:text-white/70">Less time submitting. More time studying.</p>
+                <p className="text-center font-serif italic text-[clamp(1.25rem,2cqh,2rem)] w-fit min-w-full text-black/70 dark:text-white/70">{dict.tagline}</p>
               </div>
             </StaggerItem>
             <StaggerItem>
-              <p className="text-center text-xl w-fit max-w-150">
-                <span className="submitly">Submitly</span> takes the hassle out of homework submissions. By automating repetitive submission tasks, it helps students save valuable time and effort, so they can spend less time submitting assignments and more time focusing on what really matters.
+              <p className={` text-center ${(await params).lang === "ar" ? "text-2xl" : "text-xl"} w-fit max-w-150 `}>
+                <span className="submitly">Submitly</span> {dict.landingParagraph}
               </p>
             </StaggerItem>
             <div className="flex p-5 gap-5 justify-center items-center w-full h-fit min-h-15">
-              <StaggerItem> <Download /> </StaggerItem>
-              <StaggerItem> <Github /> </StaggerItem>
+              <StaggerItem> <Download text={dict.download} /> </StaggerItem>
+              <StaggerItem> <LearnMore text={dict.learn} /> </StaggerItem>
             </div>
           </StaggerContainer>
         </div>
@@ -56,7 +60,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col scale-85 sm:scale-100 items-center min-h-100 min-w-100 w-100 p-10 gap-10 transform rotate-5">
+        <div className="flex flex-col scale-85 sm:scale-100 items-center min-h-100 min-w-100 w-100 p-10 gap-10 transform rotate-2">
           <h1 className="text-2xl font-mono font-semibold w-full text-left">The <b>Process</b></h1>
           <div className="w-full flex flex-col items-center gap-1.5">
             <Card title={(<>Upload your <b>homework</b></>)} body={(<>Upload your completed homework to <span className="submitly">Submitly</span>, by either uploading a file, or entering your answer.</>)} />
