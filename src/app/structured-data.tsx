@@ -3,7 +3,10 @@ export default function StructuredData() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Submitly",
-    alternateName: "Submitly",
+    alternateName: [
+      "Submitly App",
+      "Submitly - Homework Submission"
+    ],
     url: "https://submitlyapp.github.io/",
   };
 
