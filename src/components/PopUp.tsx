@@ -44,7 +44,9 @@ export default function PopUp() {
                     >
                         <div className="flex justify-between text-4xl font-mono border-b-2 border-black/50 dark:border-white/50 pb-5">Support me! <button className="h-full aspect-square cursor-pointer" onClick={() => setIsOpen(false)}>X</button></div>
                         <div className="flex flex-col sm:grid grid-cols-2 grid-rows-2 size-full p-2.5 gap-2.5 font-mono text-2xl">
-                            <div className="relative rounded-2xl border-2 p-2.5 flex flex-col gap-1.5">
+                            <motion.div
+                            whileHover={{scale: 1.03}}
+                            className="relative rounded-2xl border-2 p-2.5 flex flex-col gap-1.5">
                                 <div className="w-full h-full">
                                     <h1 className="border-b-2 pb-1.5 text-lg sm:text-2xl">With <span className="font-semibold italic">Instapay</span></h1>
                                     <p className="font-light text-lg sm:text-xl">Support my work with a donation via my <span className="font-semibold italic">Instapay</span> link</p>
@@ -52,7 +54,7 @@ export default function PopUp() {
                                 <button className="w-full py-1.5 border-2 dark:border-0 dark:glow rounded-xl sm:rounded-2xl bg-white text-black
                                 cursor-pointer hover-anim text-lg sm:text-2xl"
                                 onClick={handleInsta}>Reveal link!</button>
-                            </div>
+                            </motion.div>
                         </div>
                         <AnimatePresence>
                             {(instaOpen) && (
@@ -63,7 +65,7 @@ export default function PopUp() {
                                 className="fixed flex flex-col items-center inset-1/2 -translate-1/2 min-w-100 max-w-200 w-2/3 aspect-43/46 bg-zinc-50 dark:bg-black z-999
                                 rounded-3xl border-2 justify-between border-black dark:border-white p-5 gap-2">
                                     <h1 className="flex w-full py-5 px-8 text-2xl justify-between font-bold font-mono">Instapay <button onClick={() => setInstaOpen(false)} className="cursor-pointer">X</button></h1>
-                                    <div className="h-3/4 aspect-43/46 relative"><Image src="/instapay.jpeg" alt="instapay qr code" fill className="rounded-2xl" /></div>
+                                    <div className="h-3/4 aspect-43/46 relative"><Image src="/instapay.jpeg" alt="instapay qr code" fill className="rounded-2xl drop-shadow-2xl dark:drop-shadow-none" /></div>
                                     <a href="https://ipn.eg/S/submitly/instapay/2D1xSR" target="_blank" className="font-mono text-xs sm:text-lg underline">https://ipn.eg/S/submitly/instapay/2D1xSR</a>
                                 </motion.div>
                             )}
