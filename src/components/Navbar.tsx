@@ -48,7 +48,8 @@ export default function Navbar({ navbar }: { navbar: NavBar }) {
         <AnchorButton href="#faq" text={navbar.faq} />
       </div>
       
-      <div className="relative flex flex-col gap-1.5 text-sm sm:text-[1rem] border-b-2 border-black/60 dark:border-white/60">
+      <div
+      className="relative flex flex-col gap-1.5 text-sm sm:text-[1rem] border-b-2 border-black/60 dark:border-white/60">
         <button className="flex justify-between gap-2.5 w-full cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}>
           {params.lang === "ar" ? "عربية" : "English"}
@@ -79,7 +80,7 @@ export default function Navbar({ navbar }: { navbar: NavBar }) {
           initial={{y: 10, opacity: 0}}
           animate={{y: 0, opacity: 1}}
           exit={{y: 10, opacity: 0}}
-          className="absolute sm:hidden text-xl right-0 top-[calc(100%+10px)] flex flex-col bg-zinc-50 dark:bg-black p-5 gap-2.5">
+          className="absolute sm:hidden text-xl rtl:left-0 ltr:right-0 top-[calc(100%+10px)] flex flex-col bg-zinc-50 dark:bg-black p-5 gap-2.5">
             <AnchorButton href="#" text={navbar.home} />
             <AnchorButton href="#download" text={navbar.download} />
             <AnchorButton href="#about" text={navbar.about} />
