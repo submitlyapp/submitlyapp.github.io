@@ -63,7 +63,7 @@ export default function PopUp({ dict }: { dict: { supportMe: string, withInstapa
                                 initial={{y: 10, opacity: 0}}
                                 animate={{y: 0, opacity: 1}}
                                 exit={{y: 10, opacity: 0}}
-                                className="fixed flex flex-col items-center inset-1/2 -translate-1/2 min-w-100 max-w-200 w-2/3 aspect-43/46 bg-zinc-50 dark:bg-black z-999
+                                className="fixed flex flex-col items-center inset-1/2 -translate-y-1/2 rtl:translate-x-1/2 ltr:-translate-1/2 min-w-100 max-w-200 w-2/3 aspect-43/46 bg-zinc-50 dark:bg-black z-999
                                 rounded-3xl border-2 justify-between border-black dark:border-white p-5 gap-2">
                                     <h1 className="flex w-full py-5 px-8 text-2xl justify-between font-bold font-mono">Instapay <button onClick={() => setInstaOpen(false)} className="cursor-pointer">X</button></h1>
                                     <div className="h-3/4 aspect-43/46 relative"><Image src="/instapay.jpeg" alt="instapay qr code" fill className="rounded-2xl drop-shadow-2xl dark:drop-shadow-none" /></div>
