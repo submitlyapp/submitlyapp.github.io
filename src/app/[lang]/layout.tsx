@@ -85,7 +85,7 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[la
         <StructuredData />
         <Navbar navbar={dict.navbar} />
         {children}
-        <Footer />
+        <Footer footer={dict.navbar} />
       </body>
     </html>
   );

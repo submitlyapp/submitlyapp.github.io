@@ -8,6 +8,7 @@ import PopUp from "@/components/PopUp";
 import FAQ from "@/components/FAQ";
 import Card from "@/components/Card";
 import { getDictionary } from "./dictionaries";
+import Markdown from "markdown-to-jsx";
 
 export default async function Home({ params }: PageProps<"/[lang]">) {
   const dict = await getDictionary();
@@ -53,10 +54,10 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         mask-[radial-gradient(80%_95%_at_50%_80%,black_40%,transparent_70%)]" aria-hidden />
 
         <div className="@container z-10 max-w-150 min-w-80 w-1/2 flex flex-col px-10 gap-5">
-          <h1 className="font-bold text-[clamp(1.5rem,10cqw,2rem)] border-b-2 pb-2.5">About <span className="submitly">Submitly</span></h1>
+          <h1 className="font-bold text-[clamp(1.5rem,10cqw,2rem)] border-b-2 pb-2.5"> {dict.aboutParagraph.about} <span className="submitly">Submitly</span></h1>
           <div className="flex flex-col gap-2.5 text-sm sm:text-[1.5rem]">
-            <p><span className="submitly">Submitly</span> takes the hassle out of turning in homework. Instead of <i>clicking through clunky educational portals</i> and uploading assignments one by one, <span className="submitly">Submitly</span> automates the repetitive submission process so you can get back to studying.</p>
-            <p>Simply upload your completed files or enter your answers, choose your logged-in educational portal, and let <span className="submitly">Submitly</span> handle the rest. It <i>doesn&apos;t do</i> the homework for you; it just streamlines the final step of turning it in. Completely <i>free</i> and easy to use.</p>
+            <p><span className="submitly">Submitly</span> <Markdown options={{forceInline: true}}>{dict.aboutParagraph.paragraph[0]}</Markdown> <span className="submitly">Submitly</span> {dict.aboutParagraph.paragraph[1]}</p>
+            <p> {dict.aboutParagraph.paragraph[2]} <span className="submitly">Submitly</span> <Markdown options={{forceInline: false}}>{dict.aboutParagraph.paragraph[3]}</Markdown> </p>
           </div>
         </div>
 
@@ -124,8 +125,8 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
       <section id="faq" className="relative flex justify-center items-center w-screen min-h-[60vh] bg-zinc-100 dark:bg-mist-950 border-b-2 border-black/20 dark:border-white/20
         p-10 z-1 overflow-clip">
           <div className="min-h-100 min-w-100 h-1/3 w-1/3 p-5 text-xl flex flex-col gap-5">
-            <h1 className="font-mono font-bold border-b-2 border-black/50 dark:border-white/50 pb-5">Frequently Asked Questions</h1>
-            <FAQ />
+            <h1 className="font-mono font-bold border-b-2 border-black/50 dark:border-white/50 pb-5">{dict.faq.title}</h1>
+            <FAQ faqDict={dict.faq} />
           </div>
       </section>
     </div>

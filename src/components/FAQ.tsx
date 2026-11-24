@@ -3,11 +3,13 @@
 import { useState } from "react"
 import { JSX } from "react/jsx-runtime"
 import Image from "next/image";
+import Markdown from "markdown-to-jsx";
 
-const faq = [
+function getFaq(dict: FAQDict) {
+    return [
     {
-        question: (<p> How does <span className="submitly">Submitly</span> actually work?</p>),
-        answer: (<p> You upload your completed homework answers to the app, select your educational portal, and <span className="submitly">Submitly</span> takes care of the rest! It automatically submits your uploaded answers to your educational portal, saving you the hassle of manually doing it. Just <i>upload</i>, <i>submit</i> and you're <b>done</b>! </p>),
+        question: (<p> {dict.questions[0].title[0]} <span className="submitly">Submitly</span> {dict.questions[0].title[1]}</p>),
+        answer: (<p> {dict.questions[0].answer[0]} <span className="submitly">Submitly</span> <Markdown options={{forceInline: true}}>{dict.questions[0].answer[1]}</Markdown> </p>),
     },
     {
         question: (<p> Does <span className="submitly">Submitly</span> solve my homework?</p>),
@@ -26,10 +28,11 @@ const faq = [
         answer: (<p> Your privacy matters to us! Uploaded images and text are sent to third-party LLMs (such as Google Gemini) for processing. While we take privacy <i>very seriously</i> and strive to protect your data, no online service can guarantee <i>absolute</i> security. We recommend avoiding uploading images that contain <i>sensitive personal information</i>. We're committed to making <span className="submitly">Submitly</span> as safe and transparent as possible! </p>),
     },
 ]
+}
 
-const FAQItem = ({faq}: { faq: { question: JSX.Element, answer: JSX.Element } }) => {
+const FAQItem = ({faq}: { faq: { question: JSX.Element, answer: JSX.Element } } ) => {
     const [isOpen, setIsOpen] = useState(false);
-    
+
     return (
         <div className="flex flex-col w-full px-3 border-b-2 border-black/50 dark:border-white/50 gap-5 text-start">
             <button
@@ -39,7 +42,7 @@ const FAQItem = ({faq}: { faq: { question: JSX.Element, answer: JSX.Element } })
                 <Image src={"/chevron.svg"} alt="" width={24} height={24} className={` dark:invert ${isOpen ? 'transform rotate-180' : ''} transition-all duration-150 ease-in `} />
             </button>
             <div className={ ` grid transition-all duration-100 ease-in ${isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0' } ` }>
-                <div className="overflow-hidden text-black/80 dark:text-white/70 pb-5">
+                <div className="overflow-hidden text-[#333] dark:text-[#bbb] pb-5">
                     {faq.answer}
                 </div>
             </div>
@@ -47,10 +50,18 @@ const FAQItem = ({faq}: { faq: { question: JSX.Element, answer: JSX.Element } })
     )
 }
 
-export default function FAQ() {
+type FAQDict = {
+    title: string,
+    questions: {
+        title: string[],
+        answer: string[]
+    }[]
+}
+
+export default function FAQ({ faqDict }: { faqDict: FAQDict }) {
   return (
     <div className="flex flex-col gap-5">
-      {faq.map((faq, index) => (<FAQItem faq={faq} key={index} />))}
+      {getFaq(faqDict).map((faq, index) => (<FAQItem faq={faq} key={index} dict={faqDict} />))}
     </div>
   )
 }
