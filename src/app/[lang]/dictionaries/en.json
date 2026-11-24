@@ -1,4 +1,10 @@
 {
+    "navbar": {
+        "home": "Home",
+        "download": "Download",
+        "about": "About",
+        "faq": "FAQ"
+    },
     "tagline": "Less time submitting. More time studying.",
     "download": "Download now!",
     "learn": "Learn more!",

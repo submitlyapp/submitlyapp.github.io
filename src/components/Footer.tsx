@@ -6,9 +6,9 @@ export default function Footer() {
     flex justify-evenly items-center px-5 py-8 font-mono text-black/50 dark:text-white/50">
         <span className="text-xs sm:text-lg">ItsEasy @ 2026</span>
         <div className="flex gap-2 sm:gap-5 text-xs sm:text-lg">
+            <AnchorButton href="#" text="Home" />
             <AnchorButton href="#download" text="Download" />
             <AnchorButton href="#about" text="About" />
-            <AnchorButton href="https://github.com/itseasyy" newTab text="Source" />
             <AnchorButton href="#faq" text="FAQ" />
         </div>
         <a href="#" className="submitly text-md sm:text-xl">Submitly</a>

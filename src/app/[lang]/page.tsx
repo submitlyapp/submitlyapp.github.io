@@ -56,7 +56,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
           <h1 className="font-bold text-[clamp(1.5rem,10cqw,2rem)] border-b-2 pb-2.5">About <span className="submitly">Submitly</span></h1>
           <div className="flex flex-col gap-2.5 text-sm sm:text-[1.5rem]">
             <p><span className="submitly">Submitly</span> takes the hassle out of turning in homework. Instead of <i>clicking through clunky educational portals</i> and uploading assignments one by one, <span className="submitly">Submitly</span> automates the repetitive submission process so you can get back to studying.</p>
-            <p>Simply upload your completed files or enter your answers, choose your logged-in educational portal, and let <span className="submitly">Submitly</span> handle the rest. It <i>doesn't do</i> the homework for you; it just streamlines the final step of turning it in. Completely <i>free</i> and easy to use.</p>
+            <p>Simply upload your completed files or enter your answers, choose your logged-in educational portal, and let <span className="submitly">Submitly</span> handle the rest. It <i>doesn&apos;t do</i> the homework for you; it just streamlines the final step of turning it in. Completely <i>free</i> and easy to use.</p>
           </div>
         </div>
 
@@ -67,7 +67,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
 
             <div className="w-0.5 h-10 bg-linear-to-b from-transparent from-5% via-black/50 dark:via-white/50 to-95% to-transparent" />
 
-            <Card title={(<>Select your <b>portal</b></>)} body={(<>Select the educational portal you want <span className="submitly">Submitly</span> to submit to. Make sure you're logged in!</>)} />
+            <Card title={(<>Select your <b>portal</b></>)} body={(<>Select the educational portal you want <span className="submitly">Submitly</span> to submit to. Make sure you&apos;re logged in!</>)} />
 
             <div className="w-0.5 h-10 bg-linear-to-b from-transparent from-5% via-black/50 dark:via-white/50 to-95% to-transparent" />
             

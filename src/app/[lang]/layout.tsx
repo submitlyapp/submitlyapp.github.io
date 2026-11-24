@@ -4,6 +4,7 @@ import "../globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StructuredData from "../structured-data";
+import { getDictionary } from "./dictionaries";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -71,6 +72,7 @@ export async function generateStaticParams() {
 
 export default async function RootLayout({ children, params }: LayoutProps<"/[lang]">) {
   const lang = (await params).lang
+  const dict = await getDictionary();
   
   return (
     <html
@@ -81,7 +83,7 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[la
       <title>Submitly</title>
       <body className="min-h-full flex flex-col overflow-x-hidden">
         <StructuredData />
-        <Navbar />
+        <Navbar navbar={dict.navbar} />
         {children}
         <Footer />
       </body>
