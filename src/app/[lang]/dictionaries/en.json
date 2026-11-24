@@ -18,6 +18,14 @@
             "handle the rest. It *doesn't do* the homework for you; it just streamlines the final step of turning it in. Completely *free* and easy to use."
         ]
     },
+    "downloadTitle": "Download",
+    "treatMeToACoffee": "Treat me to a coffee!",
+    "supportMenu": {
+        "supportMe": "Support Me!",
+        "withInstapay": "With ***Instapay***",
+        "instaDesc": "Support my work with a donation via my ***Instapay*** link.",
+        "revealLink": "Reveal link!"
+    },
     "faq": {
         "title": "Frequently Asked Questions",
         "questions": [

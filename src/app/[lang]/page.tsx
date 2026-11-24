@@ -54,8 +54,8 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         mask-[radial-gradient(80%_95%_at_50%_80%,black_40%,transparent_70%)]" aria-hidden />
 
         <div className="@container z-10 max-w-150 min-w-80 w-1/2 flex flex-col px-10 gap-5">
-          <h1 className="font-bold text-[clamp(1.5rem,10cqw,2rem)] border-b-2 pb-2.5"> {dict.aboutParagraph.about} <span className="submitly">Submitly</span></h1>
-          <div className="flex flex-col gap-2.5 text-sm sm:text-[1.5rem]">
+          <h1 className="font-bold text-[clamp(1.5rem,10cqw,2rem)] rtl:text-[clamp(1.5rem,15cqw,2rem)] border-b-2 pb-2.5"> {dict.aboutParagraph.about} <span className="submitly">Submitly</span></h1>
+          <div className="flex flex-col gap-2.5 rtl:text-[1.25rem] text-sm rtl:sm:text-[1.75rem] sm:text-[1.5rem]">
             <p><span className="submitly">Submitly</span> <Markdown options={{forceInline: true}}>{dict.aboutParagraph.paragraph[0]}</Markdown> <span className="submitly">Submitly</span> {dict.aboutParagraph.paragraph[1]}</p>
             <p> {dict.aboutParagraph.paragraph[2]} <span className="submitly">Submitly</span> <Markdown options={{forceInline: false}}>{dict.aboutParagraph.paragraph[3]}</Markdown> </p>
           </div>
@@ -96,8 +96,8 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
 
           <div className="z-10 flex flex-col gap-5 p-5 h-full w-full sm:max-w-300 sm:max-h-150">
             <div className="flex justify-between">
-              <h1 className="font-mono font-medium text-2xl md:text-4xl">Download <span className="font-serif font-bold italic">Submitly</span>.</h1>
-              <BuyMeACoffee />
+              <h1 className="font-mono font-medium text-2xl md:text-4xl">{dict.downloadTitle} <span className="font-serif font-bold italic">Submitly</span>.</h1>
+              <BuyMeACoffee text={dict.treatMeToACoffee} />
             </div>
             <div className="w-full h-full md:flex grid gap-5 text-3xl sm:text-4xl">
               <div className="h-full flex-1 border-2 dark:border-0 border-black bg-zinc-50 dark:bg-zinc-300 rounded-4xl
@@ -119,7 +119,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
           </div>
         </section>
 
-        <PopUp />
+        <PopUp dict={dict.supportMenu} />
       </MenuProvider>
 
       <section id="faq" className="relative flex justify-center items-center w-screen min-h-[60vh] bg-zinc-100 dark:bg-mist-950 border-b-2 border-black/20 dark:border-white/20
