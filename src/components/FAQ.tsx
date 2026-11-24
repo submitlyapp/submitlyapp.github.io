@@ -61,7 +61,7 @@ type FAQDict = {
 export default function FAQ({ faqDict }: { faqDict: FAQDict }) {
   return (
     <div className="flex flex-col gap-5">
-      {getFaq(faqDict).map((faq, index) => (<FAQItem faq={faq} key={index} dict={faqDict} />))}
+      {getFaq(faqDict).map((faq, index) => (<FAQItem faq={faq} key={index} />))}
     </div>
   )
 }
