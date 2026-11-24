@@ -31,9 +31,9 @@ const FAQItem = ({faq}: { faq: { question: JSX.Element, answer: JSX.Element } })
     const [isOpen, setIsOpen] = useState(false);
     
     return (
-        <div className="flex flex-col w-full px-3 border-b-2 border-black/50 dark:border-white/50 gap-5 text-left">
+        <div className="flex flex-col w-full px-3 border-b-2 border-black/50 dark:border-white/50 gap-5 text-start">
             <button
-            className="w-full flex justify-between font-bold cursor-pointer text-left"
+            className="w-full flex justify-between font-bold cursor-pointer text-start"
             onClick={() => setIsOpen(!isOpen)}>
                 {faq.question}
                 <Image src={"/chevron.svg"} alt="" width={24} height={24} className={` dark:invert ${isOpen ? 'transform rotate-180' : ''} transition-all duration-150 ease-in `} />

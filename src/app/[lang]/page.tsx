@@ -61,7 +61,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         </div>
 
         <div className="flex flex-col scale-85 sm:scale-100 items-center min-h-100 min-w-100 w-100 p-10 gap-10 transform rotate-2">
-          <h1 className="text-2xl font-mono font-semibold w-full text-left">The <b>Process</b></h1>
+          <h1 className="text-2xl font-mono font-semibold w-full text-start">The <b>Process</b></h1>
           <div className="w-full flex flex-col items-center gap-1.5">
             <Card title={(<>Upload your <b>homework</b></>)} body={(<>Upload your completed homework to <span className="submitly">Submitly</span>, by either uploading a file, or entering your answer.</>)} />
 

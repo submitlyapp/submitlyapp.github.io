@@ -30,7 +30,7 @@ export default function Navbar({ navbar }: { navbar: NavBar }) {
   })
 
   const handleRedirect = (to: string) => {
-    router.push(`/${to}/`)
+    router.push(`/${to}/`, { scroll: false })
     setIsOpen(false)
   }
 
