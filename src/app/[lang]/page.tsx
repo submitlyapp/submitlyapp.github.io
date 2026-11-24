@@ -9,6 +9,7 @@ import FAQ from "@/components/FAQ";
 import Card from "@/components/Card";
 import { getDictionary } from "./dictionaries";
 import Markdown from "markdown-to-jsx";
+import Render from "@/components/Render";
 
 export default async function Home({ params }: PageProps<"/[lang]">) {
   const dict = await getDictionary();
@@ -56,13 +57,13 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         <div className="@container z-10 max-w-150 min-w-80 w-1/2 flex flex-col px-10 gap-5">
           <h1 className="font-bold text-[clamp(1.5rem,10cqw,2rem)] rtl:text-[clamp(1.5rem,15cqw,2rem)] border-b-2 pb-2.5"> {dict.aboutParagraph.about} <span className="submitly">Submitly</span></h1>
           <div className="flex flex-col gap-2.5 rtl:text-[1.25rem] text-sm rtl:sm:text-[1.75rem] sm:text-[1.5rem]">
-            <p><span className="submitly">Submitly</span> <Markdown options={{forceInline: true}}>{dict.aboutParagraph.paragraph[0]}</Markdown> <span className="submitly">Submitly</span> {dict.aboutParagraph.paragraph[1]}</p>
-            <p> {dict.aboutParagraph.paragraph[2]} <span className="submitly">Submitly</span> <Markdown options={{forceInline: false}}>{dict.aboutParagraph.paragraph[3]}</Markdown> </p>
+            <p><Render>{dict.aboutParagraph.paragraph[0]}</Render></p>
+            <p> <Render>{dict.aboutParagraph.paragraph[1]}</Render> </p>
           </div>
         </div>
 
         <div className="flex flex-col scale-85 sm:scale-100 items-center min-h-100 min-w-100 w-100 p-10 gap-10 transform rotate-2">
-          <h1 className="text-2xl font-mono font-semibold w-full text-start">The <b>Process</b></h1>
+          <h1 className="text-2xl font-mono font-semibold w-full text-start">{dict.the} <b>{dict.process}</b></h1>
           <div className="w-full flex flex-col items-center gap-1.5">
             <Card title={(<>Upload your <b>homework</b></>)} body={(<>Upload your completed homework to <span className="submitly">Submitly</span>, by either uploading a file, or entering your answer.</>)} />
 

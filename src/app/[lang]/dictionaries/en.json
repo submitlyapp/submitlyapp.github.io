@@ -12,12 +12,12 @@
     "aboutParagraph": {
         "about": "About",
         "paragraph": [
-            "takes the hassle out of turning in homework. Instead of *clicking through clunky educational portals* and uploading assignments one by one,",
-            "automates the repetitive submission process so you can get back to studying.",
-            "Simply upload your completed files or enter your answers, choose your logged-in educational portal, and let",
-            "handle the rest. It *doesn't do* the homework for you; it just streamlines the final step of turning it in. Completely *free* and easy to use."
+            "Submitly takes the hassle out of turning in homework. Instead of *clicking through clunky educational portals* and uploading assignments one by one, Submitly automates the repetitive submission process so you can get back to studying.",
+            "Simply upload your completed files or enter your answers, choose your logged-in educational portal, and let Submitly handle the rest. It *doesn't do* the homework for you; it just streamlines the final step of turning it in. Completely *free* and easy to use."
         ]
     },
+    "the": "The",
+    "process": "Process",
     "downloadTitle": "Download",
     "treatMeToACoffee": "Treat me to a coffee!",
     "supportMenu": {
@@ -30,14 +30,24 @@
         "title": "Frequently Asked Questions",
         "questions": [
             {
-                "title": [
-                    "How does",
-                    "actually work?"
-                ],
-                "answer": [
-                    "You upload your completed homework answers to the app, select your educational portal, and",
-                    "takes care of the rest! It automatically submits your uploaded answers to your educational portal, saving you the hassle of manually doing it. Just *upload*, *submit* and you're **done**!"
-                ]
+                "title": "How does Submitly actually work?",
+                "answer": "You upload your completed homework answers to the app, select your educational portal, and Submitly takes care of the rest! It automatically submits your uploaded answers to your educational portal, saving you the hassle of manually doing it. Just *upload*, *submit* and you're **done**!"
+            },
+            {
+                "title": "Does Submitly solve my homework?",
+                "answer": "**No!** Submitly doesn't solve your homework or generate answers for you. Its purpose is to *automate* the submission process. You simply upload your completed homework, and Submitly takes care of submitting it to your educational portal for you. You do the work, Submitly handles the submission!"
+            },
+            {
+                "title": "Does Submitly actually save my time?",
+                "answer": "**Absolutely!** Submitly is designed to save you time by automating repetitive homework submission tasks that would otherwise have to be done manually. Instead of spending time *navigating* educational portals and submitting assignments one by one, Submitly *streamlines* the process so you can get it done faster with less effort."
+            },
+            {
+                "title": "Does Submitly cost money?",
+                "answer": "**No!** Submitly is, and plans to stay, completely free! There isn't any subscriptions, or hidden fees. We're committed to making *high-quality*, free tools that every student can use, and benefit from!"
+            },
+            {
+                "title": "Is my homework safe and private while using Submitly?",
+                "answer": "Your privacy matters to us! Uploaded [here](google.com) images and text are sent to third-party LLMs (such as Google Gemini) for processing. While we take privacy *very seriously* and strive to protect your data, no online service can guarantee *absolute* security. We recommend avoiding uploading images that contain *sensitive personal information*. We're committed to making Submitly as safe and transparent as possible!"
             }
         ]
     }
