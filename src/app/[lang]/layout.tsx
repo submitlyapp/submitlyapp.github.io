@@ -30,6 +30,13 @@ export const metadata: Metadata = {
     template: "%s | Submitly",
   },
 
+  alternates: {
+    languages: {
+      en: "/en",
+      ar: "/ar"
+    }
+  },
+
   applicationName: "Submitly",
 
   description:

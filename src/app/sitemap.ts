@@ -10,6 +10,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       priority: 1,
     },
+    {
+      url: `${baseUrl}/en`,
+      lastModified: new Date(),
+      priority: 2,
+    },
+    {
+      url: `${baseUrl}/ar`,
+      lastModified: new Date(),
+      priority: 2,
+    },
     // Add your other static routes here (e.g., `${baseUrl}/about`)
   ];
 }

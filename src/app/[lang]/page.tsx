@@ -8,7 +8,6 @@ import PopUp from "@/components/PopUp";
 import FAQ from "@/components/FAQ";
 import Card from "@/components/Card";
 import { getDictionary } from "./dictionaries";
-import Markdown from "markdown-to-jsx";
 import Render from "@/components/Render";
 
 export default async function Home({ params }: PageProps<"/[lang]">) {
@@ -65,15 +64,15 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         <div className="flex flex-col scale-85 sm:scale-100 items-center min-h-100 min-w-100 w-100 p-10 gap-10 transform rotate-2">
           <h1 className="text-2xl font-mono font-semibold w-full text-start">{dict.the} <b>{dict.process}</b></h1>
           <div className="w-full flex flex-col items-center gap-1.5">
-            <Card title={(<>Upload your <b>homework</b></>)} body={(<>Upload your completed homework to <span className="submitly">Submitly</span>, by either uploading a file, or entering your answer.</>)} />
+            <Card title={<Render>{dict.theProcess[0].title}</Render>} body={<Render>{dict.theProcess[0].paragraph}</Render>} />
 
             <div className="w-0.5 h-10 bg-linear-to-b from-transparent from-5% via-black/50 dark:via-white/50 to-95% to-transparent" />
 
-            <Card title={(<>Select your <b>portal</b></>)} body={(<>Select the educational portal you want <span className="submitly">Submitly</span> to submit to. Make sure you&apos;re logged in!</>)} />
+            <Card title={<Render>{dict.theProcess[1].title}</Render>} body={<Render>{dict.theProcess[1].paragraph}</Render>} />
 
             <div className="w-0.5 h-10 bg-linear-to-b from-transparent from-5% via-black/50 dark:via-white/50 to-95% to-transparent" />
             
-            <Card title={(<>Watch the <b>magic</b></>)} body={(<><span className="submitly">Submitly</span> will take it from there. Just sit back, relax, and watch the magic happen.</>)} />
+            <Card title={<Render>{dict.theProcess[2].title}</Render>} body={<Render>{dict.theProcess[2].paragraph}</Render>} />
 
           </div>
         </div>
@@ -103,18 +102,18 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
             <div className="w-full h-full md:flex grid gap-5 text-3xl sm:text-4xl">
               <div className="h-full flex-1 border-2 dark:border-0 border-black bg-zinc-50 dark:bg-zinc-300 rounded-4xl
               flex flex-col p-5 gap-5">
-                <h1 className="flex gap-2.5 text-black font-sans font-semibold border-b-2 border-black/50 pb-5"><Image src={"/windows.svg"} alt="" height={64} width={64} /> <span>Download for <span className="font-bold">Windows</span>!</span></h1>
-                <p className="text-black text-2xl sm:text-3xl">Download <span className="submitly">Submitly</span> for Windows using the official installer.</p>
+                <h1 className="flex gap-2.5 text-black font-sans font-semibold border-b-2 border-black/50 pb-5"><Image src={"/windows.svg"} alt="" height={64} width={64} /> <span><Render>{dict.downloadFor}</Render> <span className="font-bold">Windows</span>!</span></h1>
+                <p className="text-black text-2xl sm:text-3xl rtl:text-3xl sm:rtl:text-4xl"><Render>{dict.for.windows}</Render></p>
               </div>
               <div className="h-full flex-1 border-2 dark:border-0 border-black bg-zinc-50 dark:bg-zinc-300 rounded-4xl
               flex flex-col p-5 gap-5">
-                <h1 className="flex gap-2.5 text-black font-sans font-semibold border-b-2 border-black/50 pb-5"><Image src={"/mac.svg"} alt="" height={64} width={64} /> <span>Download for <span className="font-bold">Mac</span>!</span></h1>
-                <p className="text-black text-2xl sm:text-3xl italic">Coming soon!</p>
+                <h1 className="flex gap-2.5 text-black font-sans font-semibold border-b-2 border-black/50 pb-5"><Image src={"/mac.svg"} alt="" height={64} width={64} /> <span><Render>{dict.downloadFor}</Render> <span className="font-bold">Mac</span>!</span></h1>
+                <p className="text-black text-2xl sm:text-3xl rtl:text-3xl sm:rtl:text-4xl italic"><Render>{dict.for.mac}</Render></p>
               </div>
               <div className="h-full flex-1 border-2 dark:border-0 border-black bg-zinc-50 dark:bg-zinc-300 rounded-4xl
               flex flex-col p-5 gap-5">
-                <h1 className="flex gap-2.5 text-black font-sans font-semibold border-b-2 border-black/50 pb-5"><Image src={"/linux.svg"} alt="" height={64} width={64} /> <span>Download for <span className="font-bold">Linux</span>!</span></h1>
-                <p className="text-black text-2xl sm:text-3xl italic">Coming soon!</p>
+                <h1 className="flex gap-2.5 text-black font-sans font-semibold border-b-2 border-black/50 pb-5"><Image src={"/linux.svg"} alt="" height={64} width={64} /> <span><Render>{dict.downloadFor}</Render> <span className="font-bold">Linux</span>!</span></h1>
+                <p className="text-black text-2xl sm:text-3xl rtl:text-3xl sm:rtl:text-4xl italic"><Render>{dict.for.linux}</Render></p>
               </div>
             </div>
           </div>

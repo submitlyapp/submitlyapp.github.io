@@ -1,6 +1,6 @@
 export default function Card({ title, body }: { title: React.ReactElement, body: React.ReactElement }) {
   return (
-    <div className="relative dark:glow dark:drop-shadow-none drop-shadow-xl">
+    <div className="relative w-80 dark:glow dark:drop-shadow-none drop-shadow-xl">
     
         <div className="absolute inset-0 ring-2 ring-black/80 rounded-sm bg-transparent dark:ring-white/80 z-10" />
         
@@ -8,8 +8,8 @@ export default function Card({ title, body }: { title: React.ReactElement, body:
         <div className="absolute inset-0 z-0 grid-pattern opacity-30" />
 
         <div className="relative h-full w-full z-10">
-            <h1 className="w-full text-center py-2.5 text-lg">{title}</h1>
-            <p className="text-black dark:text-white/50 text-center text-sm">{body}</p>
+            <h1 className="w-full text-center py-2.5 rtl:text-xl text-lg">{title}</h1>
+            <p className="text-black dark:text-[#999] text-center rtl:text-xl text-sm">{body}</p>
         </div>
         </div>
 

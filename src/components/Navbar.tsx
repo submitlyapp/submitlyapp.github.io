@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import AnchorButton from "./AnchorButton"
 import { useParams, useRouter } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 
 type NavBar = {
   home: string,
@@ -59,12 +60,10 @@ export default function Navbar({ navbar }: { navbar: NavBar }) {
         <div className={ ` grid transition-all duration-100 ease-in ${isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0' } ` }>
           <div className="overflow-hidden">
             <div className="w-full p-1.5 hover:dark:bg-white/10 hover:bg-black/10 transition-all duration-75 ease-in rounded-sm">
-              <button className="z-10 w-full cursor-pointer rtl:text-right text-start"
-              onClick={() => handleRedirect("ar")}>عربية</button>
+              <Link className="z-10 w-full cursor-pointer rtl:text-right text-start" href={"/ar"} scroll={false}>عربية</Link>
             </div>
             <div className="w-full p-1.5 hover:dark:bg-white/10 hover:bg-black/10 transition-all duration-75 ease-in rounded-sm">
-              <button className="z-10 w-full cursor-pointer rtl:text-right text-start"
-              onClick={() => handleRedirect("en")}>English</button>
+              <Link href={"/en"} className="z-10 w-full cursor-pointer rtl:text-right text-start" scroll={false}>English</Link>
             </div>
           </div>
         </div>

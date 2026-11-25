@@ -5,10 +5,12 @@
         "about": "About",
         "faq": "FAQ"
     },
+
     "tagline": "Less time submitting. More time studying.",
     "download": "Download now!",
     "learn": "Learn more!",
     "landingParagraph": "takes the hassle out of homework submissions. By automating repetitive submission tasks, it helps students save valuable time and effort, so they can spend less time submitting assignments and more time focusing on what really matters.",
+    
     "aboutParagraph": {
         "about": "About",
         "paragraph": [
@@ -16,16 +18,39 @@
             "Simply upload your completed files or enter your answers, choose your logged-in educational portal, and let Submitly handle the rest. It *doesn't do* the homework for you; it just streamlines the final step of turning it in. Completely *free* and easy to use."
         ]
     },
+
     "the": "The",
     "process": "Process",
+    "theProcess": [
+        {
+            "title": "Upload your **homework**",
+            "paragraph": "Upload your completed homework to Submitly, by either uploading a file, or entering your answer."
+        },
+        {
+            "title": "Select your **portal**",
+            "paragraph": "Select the educational portal you want Submitly to submit to. Make sure you're logged in!"
+        },
+        {
+            "title": "Watch the **magic**",
+            "paragraph": "Submitly will take it from there. Just sit back, relax, and watch the magic happen."
+        }
+    ],
+
     "downloadTitle": "Download",
     "treatMeToACoffee": "Treat me to a coffee!",
+    "downloadFor": "Download for",
+    "for": {
+        "windows": "Download Submitly for Windows using the official installer.",
+        "mac": "Coming soon!",
+        "linux": "Coming soon!"
+    },
     "supportMenu": {
         "supportMe": "Support Me!",
         "withInstapay": "With ***Instapay***",
         "instaDesc": "Support my work with a donation via my ***Instapay*** link.",
         "revealLink": "Reveal link!"
     },
+
     "faq": {
         "title": "Frequently Asked Questions",
         "questions": [
@@ -47,7 +72,7 @@
             },
             {
                 "title": "Is my homework safe and private while using Submitly?",
-                "answer": "Your privacy matters to us! Uploaded [here](google.com) images and text are sent to third-party LLMs (such as Google Gemini) for processing. While we take privacy *very seriously* and strive to protect your data, no online service can guarantee *absolute* security. We recommend avoiding uploading images that contain *sensitive personal information*. We're committed to making Submitly as safe and transparent as possible!"
+                "answer": "Your privacy matters to us! Uploaded images and text are sent to third-party LLMs (such as Google Gemini) for processing. While we take privacy *very seriously* and strive to protect your data, no online service can guarantee *absolute* security. We recommend avoiding uploading images that contain *sensitive personal information*. We're committed to making Submitly as safe and transparent as possible!"
             }
         ]
     }
